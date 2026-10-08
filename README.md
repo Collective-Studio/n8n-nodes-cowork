@@ -23,6 +23,7 @@ When the token expires, create a new one in Cowork and update the credential. To
 | Resource | Operation | What it does |
 |---|---|---|
 | Birthday | Get Upcoming | People whose birthday is within N days, counted in Vietnam time. Each person is one item with `name`, `jobTitle`, `bio`, `discordId`, `month`, `day`, `daysUntil` and `profile` (`introduction`, `loves`, `funFacts`). Only active human accounts are returned, full-time by default. |
+| Project | Get Many | Projects you can read, newest first. Filter by status (only **Active** by default), **Only Mine** and **Company ID**. With **Return All** on, every page is fetched. |
 | Query | Run | Any read-only Cowork query (`my_workload`, `task_list`, `search`, `team_directory`, …) with JSON params. Returns the query's `data` field. |
 | Action | Execute | A write action (`tasks.create`, `tasks.move`, …) with a JSON payload. Risky actions return `pending_confirmation` or `pending_approval` instead of executing. |
 | Action | Approve Pending | Approve an action that returned `pending_approval`. |

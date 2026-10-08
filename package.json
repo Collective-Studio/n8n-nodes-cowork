@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-cowork",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "n8n credential and node for Cowork (co-workspace.collect.vn): birthdays, queries and actions with each user's own permissions",
   "license": "MIT",
   "homepage": "https://github.com/Collective-Studio/n8n-nodes-cowork",
