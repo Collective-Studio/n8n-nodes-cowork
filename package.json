@@ -1,0 +1,53 @@
+{
+  "name": "n8n-nodes-cowork",
+  "version": "0.1.0",
+  "description": "n8n credential and node for Cowork (co-workspace.collect.vn): birthdays, queries and actions with each user's own permissions",
+  "license": "MIT",
+  "homepage": "https://github.com/Collective-Studio/n8n-nodes-cowork",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "cowork",
+    "csms"
+  ],
+  "author": {
+    "name": "ナム",
+    "email": "contact@cda.agency"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Collective-Studio/n8n-nodes-cowork.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/CoworkApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Cowork/Cowork.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "0.52.0",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^21.1.0",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
