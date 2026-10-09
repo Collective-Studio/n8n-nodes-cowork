@@ -1,5 +1,6 @@
 import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
 import { actionDescription } from './resources/action';
+import { anniversaryDescription } from './resources/anniversary';
 import { birthdayDescription } from './resources/birthday';
 import { projectDescription } from './resources/project';
 import { queryDescription } from './resources/query';
@@ -35,6 +36,7 @@ export class Cowork implements INodeType {
 				noDataExpression: true,
 				options: [
 					{ name: 'Action', value: 'action' },
+					{ name: 'Anniversary', value: 'anniversary' },
 					{ name: 'Birthday', value: 'birthday' },
 					{ name: 'Project', value: 'project' },
 					{ name: 'Query', value: 'query' },
@@ -42,6 +44,7 @@ export class Cowork implements INodeType {
 				default: 'birthday',
 			},
 			...birthdayDescription,
+			...anniversaryDescription,
 			...projectDescription,
 			...queryDescription,
 			...actionDescription,

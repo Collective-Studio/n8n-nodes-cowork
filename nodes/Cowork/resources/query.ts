@@ -27,6 +27,7 @@ const QUERY_NAMES = [
 	['Team Directory', 'team_directory'],
 	['Upcoming Birthday Profiles', 'upcoming_birthday_profiles'],
 	['Upcoming Birthdays', 'upcoming_birthdays'],
+	['Upcoming Work Anniversaries', 'upcoming_work_anniversaries'],
 	['Work Context', 'work_context'],
 ] as const;
 
